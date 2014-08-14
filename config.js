@@ -58,6 +58,7 @@ config = {
     production: {
         url: 'http://my-ghost-blog.com',
         mail: {},
+	fileStorage: false,
         database: {
 	  client: 'postgres',
    	  connection: {
