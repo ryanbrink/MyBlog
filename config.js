@@ -27,19 +27,19 @@ config = {
         // ```
 
         database: {
-	  client: 'postgres',
-    	  connection: {
-	          host: 'ec2-54-225-101-18.compute-1.amazonaws.com',
-        	  user: 'nfbbgrjwnuotni',
-	          password: 'xuYaDls3_ExtLJ0QQsivHdJp2M',
-        	  database: 'dbjp4a2qico4p5',
-	          port: '5432'
-	  }
-        //    client: 'sqlite3',
-        //    connection: {
-        //        filename: path.join(__dirname, '/content/data/ghost-dev.db')
-        //    },
-        //    debug: false
+	//  client: 'postgres',
+    	//  connection: {
+	//          host: 'ec2-54-225-101-18.compute-1.amazonaws.com',
+        //	  user: 'nfbbgrjwnuotni',
+	//          password: 'xuYaDls3_ExtLJ0QQsivHdJp2M',
+        //	  database: 'dbjp4a2qico4p5',
+	//          port: '5432'
+	//  }
+            client: 'sqlite3',
+            connection: {
+                filename: path.join(__dirname, '/content/data/ghost-dev.db')
+            },
+            debug: false
         },
         server: {
             // Host to be passed to node's `net.Server#listen()`
@@ -59,10 +59,18 @@ config = {
         url: 'http://my-ghost-blog.com',
         mail: {},
         database: {
-            client: 'sqlite3',
-            connection: {
-                filename: path.join(__dirname, '/content/data/ghost.db')
-            },
+	  client: 'postgres',
+   	  connection: {
+                host: 'ec2-54-225-101-18.compute-1.amazonaws.com',
+                user: 'nfbbgrjwnuotni',
+                password: 'xuYaDls3_ExtLJ0QQsivHdJp2M',
+                database: 'dbjp4a2qico4p5',
+                port: '5432'
+          },
+        //    client: 'sqlite3',
+        //    connection: {
+        //        filename: path.join(__dirname, '/content/data/ghost.db')
+        //    },
             debug: false
         },
         server: {
