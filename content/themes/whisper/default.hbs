@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{! Document Settings }}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    {{! Page Meta }}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" type="image/png" href="{{asset "favicon.png"}}">
+
+    {{! Styles'n'Scripts }}
+    <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Open+Sans:700,400" />
+
+    {{! Ghost outputs important style and meta data with this tag }}
+    {{ghost_head}}
+
+    <link href="{{asset "assets/syntaxhighlighter/styles/shCore.css"}}" rel="stylesheet" type="text/css" />
+    <link type="text/css" rel="stylesheet" href="{{asset "assets/syntaxhighlighter/styles/shCoreDefault.css"}}"/>
+    <link type="text/css" rel="stylesheet" href="{{asset "assets/syntaxhighlighter/styles/shThemeDefault.css"}}"/>
+
+    <script type="text/javascript" src="{{asset "assets/syntaxhighlighter/scripts/shCore.js"}}"></script>
+
+    <script type="text/javascript" src="{{asset "assets/syntaxhighlighter/scripts/shBrushJScript.js"}}"></script>
+    <script type="text/javascript" src="{{asset "assets/syntaxhighlighter/scripts/shBrushPhp.js"}}"></script>
+    <script type="text/javascript" src="{{asset "assets/syntaxhighlighter/scripts/shBrushSql.js"}}"></script>
+    <script type="text/javascript" src="{{asset "assets/syntaxhighlighter/scripts/shBrushSass.js"}}"></script>
+    <script type="text/javascript" src="{{asset "assets/syntaxhighlighter/scripts/shBrushCss.js"}}"></script>
+    <script type="text/javascript" src="{{asset "assets/syntaxhighlighter/scripts/shBrushBash.js"}}"></script>
+    
+    <script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+<body class="{{body_class}}">
+<a href="https://plus.google.com/+MazharAhmedPro?rel=author" style="display:none;" id="g-author">author</a>
+    {{! Everything else gets inserted here }}
+    {{{body}}}
+
+    <footer class="site-footer">
+        <a class="subscribe icon-feed" href="{{@blog.url}}/rss/"><span class="tooltip">Subscribe!</span></a>
+        <div class="inner">
+             <section class="copyright">All content copyright <a href="{{@blog.url}}/">{{@blog.title}}</a> &copy; {{date format="YYYY"}} &bull; All rights reserved.</section>
+             <section class="poweredby"><a href="https://github.com/stsbd/whisper" target="_blank">Whisper</a> theme from <a href="http://www.stsbd.com">ST Solutions International LLC</a> under MIT License.</section>
+             <section class="poweredby">Proudly published with <a class="icon-ghost" href="https://ghost.org">Ghost</a></section>
+        </div>
+    </footer>
+
+    {{! Ghost outputs important scripts and data with this tag }}
+    {{ghost_foot}}
+
+    {{! The main JavaScript file for Casper }}
+    <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-48146313-1');ga('send','pageview');
+    </script>
+</body>
+</html>
