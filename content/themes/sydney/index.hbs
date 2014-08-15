@@ -3,13 +3,14 @@
 <header>
   <!-- *Update with your image here. Keep dimensions around 200x200px for optimal performance. You don't have to worry about cropping it into a circle, I've taken care of that for you.* -->
   <img id="avatar" width="220px" src="{{@blog.cover}}">
+  <h3>{{@blog.description}}</h3>
 </header>
 <main>
   {{#foreach posts}}
   <article>
     <header>
       <h1><a href="{{url}}">{{{title}}}</a></h1>
-      <h5><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="dddd, MMMM DD, YYYY"}}</time></h5>
+      <h5><time datetime="{{date format='YYYY-MM-DD'}}">{{date published_at timeago="true"}}</time></h5>           
     </header>
     <section class="posts">
       <p>{{excerpt}}&hellip;</p>
