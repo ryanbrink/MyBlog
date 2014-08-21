@@ -569,6 +569,33 @@ coreHelpers.meta_description = function (options) {
     });
 };
 
+coreHelpers.meta_keywords = function (options) {
+  /*jslint unparam:true*/
+  var keywords,
+      blog;
+
+  if (_.isString(this.relativeUrl)) {
+      if (!this.relativeUrl || this.relativeUrl === '/' || this.relativeUrl === '' || this.relativeUrl.match(/\/page/)) {
+          blog = config.theme();
+          keywords = 'ryan, brink, software, engineering, development, ruby, node, ghost';
+      } else {
+          keywords="";
+          if (this.post && this.post.tags) {
+              this.post.tags.forEach(function(value) {
+                  if (!keywords=="") {
+                      keywords+=",";
+                  }
+                  keywords+=value.name;
+              });
+          }
+      }
+  }
+  return filters.doFilter('meta_keywords', keywords).then(function (keywords) {
+      keywords = keywords || "";
+      return new hbs.handlebars.SafeString(keywords.trim());
+  });
+};
+
 /**
  * Localised string helpers
  *
@@ -871,6 +898,8 @@ registerHelpers = function (adminHbs, assetHash) {
     registerAsyncThemeHelper('meta_description', coreHelpers.meta_description);
 
     registerAsyncThemeHelper('meta_title', coreHelpers.meta_title);
+    
+    registerAsyncThemeHelper('meta_keywords', coreHelpers.meta_keywords);
 
     registerAsyncThemeHelper('post_class', coreHelpers.post_class);
 
