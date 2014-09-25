@@ -6,10 +6,25 @@
       {{#if tags}}<h5>Posted in {{tags}}</h5>{{/if}}
       <h1>{{{title}}}</h1>
       <h5>
-        <time datetime="{{date format='YYYY-MM-DD'}}">{{date published_at timeago="true"}}</time>
+         <time datetime="{{date format='YYYY-MM-DD'}}">{{date published_at timeago="true"}}</time>
       </h5>
+      
+      
     </header>
     <section class="posts">
+    <div class="row">
+    	<div class="col-lg-2">
+	    	<div class="fb-like" data-href="http://www.ryanbrink.com{{url}}" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+    	</div>
+    	<div class="col-lg-1">
+    		<div class="g-plusone" data-size="medium"></div>
+    	</div>
+    	<div class="col-lg-2">
+	    	<a href="https://twitter.com/share" class="twitter-share-button" data-via="ry_brink">Tweet</a>
+	    	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    	</div>    	
+		
+	</div>
       {{content}}
     </section>
     {{/post}}
