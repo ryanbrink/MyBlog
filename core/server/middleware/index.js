@@ -252,7 +252,7 @@ setupMiddleware = function (server) {
     }
 
     // Favicon
-    expressServer.use(subdir, favicon(corePath + '/shared/favicon.ico'));
+    expressServer.use(subdir, favicon(corePath + '/shared/favicon.png'));
 
     // Static assets
     expressServer.use(subdir + '/shared', express['static'](path.join(corePath, '/shared'), {maxAge: utils.ONE_HOUR_MS}));
