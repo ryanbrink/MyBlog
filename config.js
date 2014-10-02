@@ -26,15 +26,7 @@ config = {
         //  },
         // ```
 
-        database: {
-	//  client: 'postgres',
-    	//  connection: {
-	//          host: 'ec2-54-225-101-18.compute-1.amazonaws.com',
-        //	  user: 'nfbbgrjwnuotni',
-	//          password: 'xuYaDls3_ExtLJ0QQsivHdJp2M',
-        //	  database: 'dbjp4a2qico4p5',
-	//          port: '5432'
-	//  }
+        database: {	
             client: 'sqlite3',
             connection: {
                 filename: path.join(__dirname, '/content/data/ghost-dev.db')
@@ -62,16 +54,12 @@ config = {
         database: {
 	  client: 'postgres',
    	  connection: {
-                host: 'ec2-54-225-101-18.compute-1.amazonaws.com',
-                user: 'nfbbgrjwnuotni',
-                password: 'xuYaDls3_ExtLJ0QQsivHdJp2M',
-                database: 'dbjp4a2qico4p5',
-                port: '5432'
+		   		host: process.env.POSTGRES_HOST,
+		        user: process.env.POSTGRES_USER,
+		        password: process.env.POSTGRES_PASSWORD,
+		        database: process.env.POSTGRES_DATABASE,
+		        port: '5432'
           },
-        //    client: 'sqlite3',
-        //    connection: {
-        //        filename: path.join(__dirname, '/content/data/ghost.db')
-        //    },
             debug: false
         },
         server: {
