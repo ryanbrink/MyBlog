@@ -2,7 +2,6 @@ language: node_js
 node_js:
   - "0.10"
 sudo: false
-addons:
 env:
   - DB=sqlite3 NODE_ENV=testing
 matrix:
