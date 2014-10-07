@@ -15,6 +15,3 @@ before_install:
   - cd -
   - if [ $DB == "mysql" ]; then mysql -e 'create database ghost_testing'; fi
   - if [ $DB == "pg" ]; then npm install pg; psql -c 'create database ghost_testing;' -U postgres; fi
-before_script:
-  - phantomjs --version
-  - casperjs --version
