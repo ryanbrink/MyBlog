@@ -47,6 +47,14 @@ frontendRoutes = function () {
     router.get('/author/:slug/rss/:page/', frontend.rss);
     router.get('/author/:slug/page/:page/', frontend.author);
     router.get('/author/:slug/', frontend.author);
+    
+    router.get('/ga-today', function(req, res, next){
+        res.render('ga-today');
+      });
+    
+    router.get('/contact-thanks', function(req, res, next){
+        res.render('contact-thanks');
+      });
 
     // Default
     router.get('/page/:page/', frontend.homepage);
