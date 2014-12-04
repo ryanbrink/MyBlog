@@ -52,6 +52,10 @@ frontendRoutes = function () {
         res.render('ga-today');
       });
     
+    router.get('/habitat', function(req, res, next){
+        res.render('habitat');
+      });
+    
     router.get('/contact-thanks', function(req, res, next){
         res.render('contact-thanks');
       });

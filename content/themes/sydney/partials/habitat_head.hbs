@@ -1,0 +1,38 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ryan Brink">
+    <meta name="description" content="Habitat products work seamlessly to bring smart automation to your home without overcomplicating your life. Finally, a way to supercharge everyday home items with Internet and mobile device connectivity." />
+    <meta name="keywords" content="Habitat, Home Automation, Internet of Things, Kickstarter" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home automation for products you already own | Habitat</title>
+    {{#post}}
+    {{/post}}
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link href="{{asset "css/main.css"}}" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="{{asset "img/favicon.ico"}}">
+    <link href="{{asset "css/prettify.css"}}" rel="stylesheet"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    
+    {{ghost_head}}    
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<script>
+	/**
+	* Function that tracks a click on an outbound link in Google Analytics.
+	* This function takes a valid URL string as an argument, and uses that URL string
+	* as the event label.
+	*/
+	var trackOutboundLink = function(url) {
+	console.log("Tracking link " + url);
+	   ga('send', 'event', 'outbound', 'click', url, {'hitCallback':
+	     function () {
+	     document.location = url;
+	     }
+	   });
+	}
+	</script>
+</head>
