@@ -8,13 +8,14 @@
  */
 
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
 
 body {
   	background-color: #e7e7e7;
-  	font-family: 'Roboto', sans-serif;
+  	font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 14px;
-    color: #555;
+    color: #000;
 
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
@@ -22,9 +23,9 @@ body {
 
 /* Titles */
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    color: #333;
+    color: #000;
 }
 
 h1 {
@@ -33,6 +34,23 @@ h1 {
 	margin-bottom: 30px;
 }
 
+@media only screen and (max-width: 500px) {
+	h1 {
+		font-size: 20px;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	h2 {
+		font-size: 18px;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	h3 {
+		font-size: 15px;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+}
 
 
 /* Paragraph & Typographic */
