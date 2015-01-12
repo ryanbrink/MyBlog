@@ -13,10 +13,26 @@
     </header>
     <section class="posts">
       {{content}}
-      
-      <!-- www.123contactform.com script begins here -->
-        
-<script type="text/javascript">var servicedomain="www.123contactform.com"; var frmRef=''; try { frmRef=window.top.location.href; } catch(err) {}; var cfJsHost = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cscript src='" + cfJsHost + servicedomain + "/includes/easyXDM.min.js' type='text/javascript'%3E%3C/script%3E")); frmRef=encodeURIComponent(frmRef).replace('%26','[%ANDCHAR%]'); document.write(unescape("%3Cscript src='" + cfJsHost + servicedomain + "/jsform-1129234.js?ref="+frmRef+"' type='text/javascript'%3E%3C/script%3E")); </script>
+        <input type="hidden" id="odamae-use-css" value="false">
+		<script type="text/javascript" src="https://odamae.io/form/js/light.js"></script>
+		<form id="odamae-contact-form" method="post" style="display: none">
+		    <div class="odamae-row">
+		    	<div class="form-group">
+					<input type="text" class="odamae-input form-control" name="name" id="name" value="" placeholder="Name" />
+				</div>
+				<div class="form-group">
+					<input type="text" class="odamae-input form-control" name="contact" id="contact" value="" placeholder="Email" />
+				</div>
+				<div class="form-group">
+					<textarea class="odamae-textarea form-control" name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+				</div>
+		    </div>
+		    <div class="odamae-row visual-captcha"></div>
+		    <div class="odamae-row actions">
+		    	<input type="hidden" id="contact_source" value="bio">
+				<input type="submit" class="odamae-button odamae-submit btn btn-default btn-lg" value="Send me a message!" onclick="odamaeSubmit(this)" data-apikey="odamae.io_f4bcf43aa3f71929b218829f64f01bf0_957d" />
+		    </div>
+		</form>
 
       
     </section>
