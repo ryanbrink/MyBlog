@@ -9,6 +9,34 @@
 	<script>
 	(adsbygoogle = window.adsbygoogle || []).push({});
 	</script>
+	<script>
+		window.odamaeComplete = function(e) 
+			{ 
+				console.log("Logging " + e);
+				if (e == 0)
+				{
+				   ga('send', 'event', 'contact', 'submit', document.URL);
+				} 
+				
+					// Ugly(ish) hack
+					$(".odamae-button").val('Send message');
+		            if (e == '1') {
+		                odamaeExecuteAfterLoad(missingFields);
+					} else if (e == '2') {
+						odamaeExecuteAfterLoad(apiKeyInvalid);
+					} else if (e == '3') {
+						odamaeExecuteAfterLoad(invalidCaptcha);
+					} else if (e == '9') {
+						odamaeExecuteAfterLoad(unknownError);
+					} else if (e == '0') {
+						sent(b);
+		            } else {
+						odamaeExecuteAfterLoad(function() {
+							$('.visualCaptcha').prepend('<div class="visualCaptchaStatus error">' + e + '</div>');
+						});
+					}	        
+			}
+	</script>
 	</div>
 	<br />
     <a href="{{@blog.url}}/rss/"><i class="fa fa-rss"></i></a>
