@@ -1,42 +1,55 @@
 <footer>	
 	<br />
+	<div class="visible-xs">
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- My site responsive ad -->
+		<ins class="adsbygoogle"
+		     style="display:block"
+		     data-ad-client="ca-pub-1172212429311946"
+		     data-ad-slot="1947585515"
+		     data-ad-format="auto"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+	</div>
 	<div class="hidden-xs">
-	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-	<ins class="adsbygoogle"
-	     style="display:inline-block;width:728px;height:90px"
-	     data-ad-client="ca-pub-1172212429311946"
-	     data-ad-slot="3090011918"></ins>
-	<script>
-	(adsbygoogle = window.adsbygoogle || []).push({});
-	</script>
-	<script>
-		window.odamaeComplete = function(e) 
-			{ 
-				console.log("Logging " + e);
-				if (e == 0)
-				{
-				   ga('send', 'event', 'contact', 'submit', document.URL);
-				} 
-				
-					// Ugly(ish) hack
-					$(".odamae-button").val('Send message');
-		            if (e == '1') {
-		                odamaeExecuteAfterLoad(missingFields);
-					} else if (e == '2') {
-						odamaeExecuteAfterLoad(apiKeyInvalid);
-					} else if (e == '3') {
-						odamaeExecuteAfterLoad(invalidCaptcha);
-					} else if (e == '9') {
-						odamaeExecuteAfterLoad(unknownError);
-					} else if (e == '0') {
-						sent(b);
-		            } else {
-						odamaeExecuteAfterLoad(function() {
-							$('.visualCaptcha').prepend('<div class="visualCaptchaStatus error">' + e + '</div>');
-						});
-					}	        
-			}
-	</script>
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<ins class="adsbygoogle"
+		     style="display:inline-block;width:728px;height:90px"
+		     data-ad-client="ca-pub-1172212429311946"
+		     data-ad-slot="3090011918"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>		
+			
+		<script>
+			window.odamaeComplete = function(e) 
+				{ 
+					console.log("Logging " + e);
+					if (e == 0)
+					{
+					   ga('send', 'event', 'contact', 'submit', document.URL);
+					} 
+					
+						// Ugly(ish) hack
+						$(".odamae-button").val('Send message');
+			            if (e == '1') {
+			                odamaeExecuteAfterLoad(missingFields);
+						} else if (e == '2') {
+							odamaeExecuteAfterLoad(apiKeyInvalid);
+						} else if (e == '3') {
+							odamaeExecuteAfterLoad(invalidCaptcha);
+						} else if (e == '9') {
+							odamaeExecuteAfterLoad(unknownError);
+						} else if (e == '0') {
+							sent(b);
+			            } else {
+							odamaeExecuteAfterLoad(function() {
+								$('.visualCaptcha').prepend('<div class="visualCaptchaStatus error">' + e + '</div>');
+							});
+						}	        
+				}
+		</script>
 	</div>
 	<br />
     <a href="{{@blog.url}}/rss/"><i class="fa fa-rss"></i></a>
