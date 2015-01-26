@@ -9,6 +9,7 @@
 
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
+@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville);
 
 body {
   	background-color: #e7e7e7;
@@ -32,9 +33,12 @@ body {
 
 /* Titles */
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Raleway', sans-serif;
     font-weight: 700;
     color: #000;
+}
+
+header {
+	text-align: left;
 }
 
 h1 {
@@ -85,6 +89,18 @@ code {
 	text-align: left;
 }
 
+article {	
+}
+
+.posts p:first-of-type:first-letter {
+	font-size: 5.5rem;
+	float: left;
+	display: inline-block;
+	position: relative;
+	margin: 18px 8px 0 0;
+	font-family: 'Libre Baskerville';
+}
+
 #foot {
     text-align: center;
 }
@@ -133,8 +149,8 @@ a:after {
 }
 
 .navbar-inverse {
-	padding-bottom: 20px;
-	padding-top: 20px;
+	padding-bottom: 10px;
+	padding-top: 10px;
 }
 
 .navbar-inverse {
