@@ -12,8 +12,10 @@
       </h5>
     </header>
     <section class="posts">
-      {{content}}
-        <input type="hidden" id="odamae-use-css" value="false">
+      {{content}}              
+    </section>
+    <section>
+    	<input type="hidden" id="odamae-use-css" value="false">
 		<script type="text/javascript" src="https://odamae.io/form/js/light.js"></script>
 		<form id="odamae-contact-form" method="post" style="display: none">
 		    <div class="odamae-row">
@@ -33,8 +35,6 @@
 				<input type="submit" class="odamae-button odamae-submit btn btn-default btn-lg" value="Send me a message!" onclick="odamaeSubmit(this)" data-apikey="odamae.io_f4bcf43aa3f71929b218829f64f01bf0_957d" />
 		    </div>
 		</form>
-
-      
     </section>
     {{/post}}
     <!-- Add disqus comments here -->
