@@ -6,29 +6,7 @@
     </header>
     <section class="posts">
       {{content}}              
-    </section>
-    <section>
-    	<input type="hidden" id="odamae-use-css" value="false">
-		<script type="text/javascript" src="https://odamae.io/form/js/light.js"></script>
-		<form id="odamae-contact-form" method="post" style="display: none">
-		    <div class="odamae-row">
-		    	<div class="form-group">
-					<input type="text" class="odamae-input form-control" name="name" id="name" value="" placeholder="Name" />
-				</div>
-				<div class="form-group">
-					<input type="text" class="odamae-input form-control" name="contact" id="contact" value="" placeholder="Email" />
-				</div>
-				<div class="form-group">
-					<textarea class="odamae-textarea form-control" name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
-				</div>
-		    </div>
-		    <div class="odamae-row visual-captcha"></div>
-		    <div class="odamae-row actions">
-		    	<input type="hidden" id="contact_source" value="bio">
-				<input type="submit" class="odamae-button odamae-submit btn btn-default btn-lg" value="Send me a message!" onclick="odamaeSubmit(this)" data-apikey="odamae.io_f4bcf43aa3f71929b218829f64f01bf0_957d" />
-		    </div>
-		</form>
-    </section>
+    </section>    
     {{/post}}
     <!-- Add disqus comments here -->
     </article>
