@@ -1,15 +1,8 @@
 {{!< default}}
 <main>
   <article class="{{post_class}}">
-  <!-- *Update with your image here. Keep dimensions around 200x200px for optimal performance. You don't have to worry about cropping it into a circle, I've taken care of that for you.* -->
-  <img id="avatar" width="220px" src="{{@blog.cover}}" alt="me and my wife">
     {{#post}}
     <header>
-      {{#if tags}}<h5>Posted in {{tags}}</h5>{{/if}}
-      <h1>{{{title}}}</h1>
-      <h5>
-        
-      </h5>
     </header>
     <section class="posts">
       {{content}}              
