@@ -1,19 +1,24 @@
 {{!< default}}
-<main>
-  {{#foreach posts}}
-  <article>   
-    <section class="posts">
-      <h1><a href="{{url}}">{{{title}}}</a></h1>
-      <h5><time datetime="{{date format='YYYY-MM-DD'}}">{{date published_at timeago="true"}}</time></h5>    
-      <p>{{excerpt}}&hellip;</p>
-      <h5><a href="{{url}}">Read more</a></h5>
-    </section>
-<!-- Uncomment this section (and comment out the section with {{excerpt words="500"}} ) if you want syntax highlighting on your index page.
-    <section class="posts">
-      {{content}}
-    </section>
--->
-  </article>
-  {{/foreach}}
-  {{pagination}}
-</main>
+<div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+		<main>
+		  {{#foreach posts}}
+		  <article>   
+		    <section class="posts">
+		      <h1><a href="{{url}}">{{{title}}}</a></h1>
+		      <h5><time datetime="{{date format='YYYY-MM-DD'}}">{{date published_at timeago="true"}}</time></h5>    
+		      <p>{{excerpt}}&hellip;</p>
+		      <h5><a href="{{url}}">Read more</a></h5>
+		    </section>
+		<!-- Uncomment this section (and comment out the section with {{excerpt words="500"}} ) if you want syntax highlighting on your index page.
+		    <section class="posts">
+		      {{content}}
+		    </section>
+		-->
+		  </article>
+		  {{/foreach}}
+		  {{pagination}}
+		</main>
+	</div>
+</div>
