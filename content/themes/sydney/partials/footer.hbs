@@ -50,7 +50,8 @@
 						} else if (e == '9') {
 							odamaeExecuteAfterLoad(unknownError);
 						} else if (e == '0') {
-							sent(b);
+							$(".odamae-button").val('Sent!');
+							sent("test");
 			            } else {
 							odamaeExecuteAfterLoad(function() {
 								$('.visualCaptcha').prepend('<div class="visualCaptchaStatus error">' + e + '</div>');

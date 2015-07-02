@@ -48,6 +48,10 @@ frontendRoutes = function () {
     router.get('/author/:slug/page/:page/', frontend.author);
     router.get('/author/:slug/', frontend.author);
     
+    router.get('/gone-hunting', function(req, res, next){
+        res.render('ga-today-ph');
+      });
+    
     router.get('/ga-today', function(req, res, next){
         res.render('ga-today');
       });

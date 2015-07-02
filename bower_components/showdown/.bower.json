@@ -1,0 +1,14 @@
+{
+  "name": "showdown",
+  "homepage": "https://github.com/ErisDS/showdown",
+  "version": "0.3.2-ghost",
+  "_release": "0.3.2-ghost",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.3.2-ghost",
+    "commit": "b682592df2eb6ce28d4a7d44892c4892d0d0360a"
+  },
+  "_source": "git://github.com/ErisDS/showdown.git",
+  "_target": "v0.3.2-ghost",
+  "_originalSource": "git://github.com/ErisDS/showdown.git"
+}
