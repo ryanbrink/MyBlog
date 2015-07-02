@@ -1,6 +1,6 @@
 (function() {
 
-    if (! jasmine) {
+    if (typeof jasmine === "undefined") {
         throw new Exception("jasmine library does not exist in global namespace!");
     }
 
@@ -83,8 +83,8 @@
             jasmine.getEnv().addReporter(new jasmine.BlanketReporter());
             window.jasmine.getEnv().currentRunner().execute();
             jasmine.getEnv().execute = function () {
-                jasmine.getEnv().currentRunner().execute();   
-            };  
+                jasmine.getEnv().currentRunner().execute();
+            };
         }
     });
 })();
