@@ -89,15 +89,6 @@ code {
 	text-align: left;
 }
 
-.posts p:first-of-type:first-letter {
-	font-size: 5.5rem;
-	float: left;
-	display: inline-block;
-	position: relative;
-	margin: 18px 8px 0 0;
-	font-family: 'Libre Baskerville';
-}
-
 #foot {
     text-align: center;
 }
