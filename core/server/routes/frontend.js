@@ -59,6 +59,10 @@ frontendRoutes = function () {
     router.get('/bio', function(req, res, next){
         res.render('bio');
       });
+
+    router.get('/harvest_links', function(req, res, next){
+        res.render('harvest_links');
+      });
     
     router.get('/habitat', function(req, res, next){
         res.render('habitat');
