@@ -63,6 +63,10 @@ frontendRoutes = function () {
     router.get('/harvest_links', function(req, res, next){
         res.render('harvest_links');
       });
+
+    router.get('/harvest_links_mobile', function(req, res, next){
+        res.render('harvest_links_mobile');
+      });
     
     router.get('/habitat', function(req, res, next){
         res.render('habitat');
