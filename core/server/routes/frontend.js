@@ -64,6 +64,10 @@ frontendRoutes = function () {
         res.render('harvest_links');
       });
 
+    router.get('/harvest_what_next', function(req, res, next){
+        res.render('harvest_what_next');
+      });
+
     router.get('/harvest_links_mobile', function(req, res, next){
         res.render('harvest_links_mobile');
       });

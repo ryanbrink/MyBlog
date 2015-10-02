@@ -1,0 +1,256 @@
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway">
+
+	<link href="{{asset "css/awesome-bootstrap-checkbox.css"}}" rel="stylesheet">
+
+	<link href="{{asset "css/animations.css"}}" rel="stylesheet">
+
+	<style>
+	h1, h2, h3, h4, h5 {
+		font-family: 'Oswald';
+		/*color: white;*/
+		color: black;
+		text-transform: uppercase;
+	}
+	h1 {
+		font-size: 50px;
+	}
+
+	.btn-harvest, .btn-harvest:active, .btn-harvest:visited { font-size: 30px; font-family: 'Oswald'; text-transform: uppercase; color: white !important; border-color: #8cc63e; background-color: #8cc63e; }
+
+	.btn-harvest:hover { color: white; border-color: #84bb39; background-color: #84bb39; }
+
+	.btn-flat {
+	    filter:progid:DXImageTransform.Microsoft.Gradient(enabled='false');
+	    -webkit-box-shadow: none;
+	    -moz-box-shadow: none;
+	    box-shadow: none;
+	    background-image:none;
+	    border: 0;
+	}
+
+	body {
+		margin: 0px;
+		padding: 0px;
+		font-family: 'Raleway';
+		color: #555555;
+		/*background-color: #8dc73f;*/
+		font-size: 30px;
+	}
+
+	@-webkit-keyframes 
+click-wave { 0% {
+ width: 40px;
+ height: 40px;
+ opacity: 0.35;
+ position: relative;
+}
+ 100% {
+ width: 200px;
+ height: 200px;
+ margin-left: -80px;
+ margin-top: -80px;
+ opacity: 0.0;
+}
+}
+
+@-moz-keyframes 
+click-wave { 0% {
+ width: 40px;
+ height: 40px;
+ opacity: 0.35;
+ position: relative;
+}
+ 100% {
+ width: 200px;
+ height: 200px;
+ margin-left: -80px;
+ margin-top: -80px;
+ opacity: 0.0;
+}
+}
+
+@-o-keyframes 
+click-wave { 0% {
+ width: 40px;
+ height: 40px;
+ opacity: 0.35;
+ position: relative;
+}
+ 100% {
+ width: 200px;
+ height: 200px;
+ margin-left: -80px;
+ margin-top: -80px;
+ opacity: 0.0;
+}
+}
+
+@keyframes 
+click-wave { 0% {
+ width: 40px;
+ height: 40px;
+ opacity: 0.35;
+ position: relative;
+}
+ 100% {
+ width: 200px;
+ height: 200px;
+ margin-left: -80px;
+ margin-top: -80px;
+ opacity: 0.0;
+}
+}
+
+		.option-input {
+			margin-right:30px !important;
+	  -webkit-appearance: none;
+	  -moz-appearance: none;
+	  -ms-appearance: none;
+	  -o-appearance: none;
+	  appearance: none;
+	  position: relative;
+	  top: 13.33333px;
+	  width: 40px;
+	  height: 40px;
+	  -webkit-transition: all 0.15s ease-out 0;
+	  -moz-transition: all 0.15s ease-out 0;
+	  transition: all 0.15s ease-out 0;
+	  background: #cbd1d8;
+	  border: none;
+	  color: #fff;
+	  cursor: pointer;
+	  display: inline-block;
+	  outline: none !important;
+	  outline: 0;
+	  position: relative;
+	  margin-right: 0.5rem;
+	  z-index: 1000;
+	}
+
+	.option-input:hover { background: #9faab7; }
+
+	.option-input:checked { background: #8cc63e; }
+
+	.option-input:checked::before {
+	  width: 40px;
+	  height: 40px;
+	  position: absolute;
+	  /*content: '\2716';*/
+	  display: inline-block;
+	  font-size: 26.66667px;
+	  text-align: center;
+	  line-height: 40px;
+	}
+
+	.option-input:checked::after {
+	  -webkit-animation: click-wave 0.65s;
+	  -moz-animation: click-wave 0.65s;
+	  animation: click-wave 0.65s;
+	  background: #40e0d0;
+	  content: '';
+	  display: block;
+	  position: relative;
+	  z-index: 100;
+	}
+
+	.option-input.radio { border-radius: 50%; }
+
+	.option-input.radio::after { border-radius: 50%; }
+
+	#test_container {
+		/*background-color: red;*/
+	}
+	</style>
+</head>
+<body>
+	<div class="container" id="form_container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-sm-offset-3">
+				<h1>SO I JUST...</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-sm-offset-3">
+				  <label><input type="radio" class="option-input radio" name="optradio">Attended for the first time</label>
+				  <label><input type="radio" class="option-input radio" name="optradio">Got saved</label>				  
+				  <label><input type="radio" class="option-input radio" name="optradio">Completed the Believe classes</label>
+				  <label><input type="radio" class="option-input radio" name="optradio">Joined a small group</label>
+			</div>
+		</div>
+		<div class="row" style="margin-top: 25px">
+			<div class="col-xs-12" style="text-align: center;">
+				<a href="#" onclick="testIn('#test_container', '#form_container')" class="btn btn-harvest btn-lg btn-flat"><span class="fa fa-arrow-circle-o-right"></span> WHAT'S NEXT?</a>
+			</div>
+		</div>
+	</div>
+	<div style="width: 100%;height:100vh;z-index:-1;position:absolute;top:0px;background-color: #EEEEEE;" class="fade out" id="test_container">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-8 col-sm-offset-2">
+					<h1>Awesome, time to get involved!</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script>
+var isAnimating = false;
+testIn = function(in_div, out_div) {
+	target_in = $(in_div);
+	target_out = $(out_div);
+	
+	target_in.data('originalClassList', target_in.attr('class'));
+	target_out.data('originalClassList', target_out.attr('class'));
+
+	target_in.addClass('pt-page-rotateSlideIn')	
+	target_in.removeClass('out');
+	target_out.addClass('pt-page-rotateSlideOut')
+
+	if( isAnimating ) {
+			return false;
+		}
+
+	isAnimating = true;
+
+	target_in.one('webkitAnimationEnd oanimationend msAnimationEnd animationend',   
+	    function(e) {
+	    	console.log(target_in.data('originalClassList'));
+	    	
+	    	// target_in.attr('class', target_in.data('originalClassList'));
+	    	
+	    	// target_out.attr('class', target_out.data('originalClassList'));
+	    	isAnimating = false
+	    });
+}
+testOut = function() {
+	if( isAnimating ) {
+			return false;
+		}
+
+	isAnimating = true;
+
+	$('#test_container').addClass('pt-page-rotateSlideOut')
+	$('#form_container').addClass('pt-page-rotateSlideIn')
+
+
+}
+</script>
+</body>
+</html>
