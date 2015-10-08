@@ -45,5 +45,19 @@
 	  js = d.createElement(s); js.id = id;
 	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=410003242359572&version=v2.0";
 	  fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));</script>
+	}(document, 'script', 'facebook-jssdk'));
+
+    var old_title = null;
+    window.onblur = function() {
+        if (old_title == null) {
+            old_title = document.title;
+        }        
+        document.title = " 😢";
+    }
+
+    window.onfocus = function() {
+        document.title = "👍 " + old_title;
+    }
+
+    </script>
 </head>
