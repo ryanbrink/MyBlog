@@ -76,21 +76,21 @@
 
 	#banner {
 		margin: 0;	
-		background-image:  url("../assets/img/overlay-none.png"), url("../assets/img/harvest_white.png"), url("../assets/img/gradient_overlay.png"), 	url("../assets/img/overlay.png"), url("../assets/img/wood-panel.jpg");
+		background-image:  url("../assets/img/overlay-none.png"), url("../assets/img/transp.png"), url("../assets/img/gradient_overlay.png"), 	url("../assets/img/overlay.png"), url("../assets/img/wood-panel.jpg");
 		background-position: top, center 2em, top left,  	top left, 	center top;
 		background-size: 	auto, auto 2em, auto 9em, 			auto, 		cover;	
 	}
 	
 	#blognews {
 		margin: 0;	
-		background-image:  url("../assets/img/overlay-none.png"), url("../assets/img/harvest_white.png"), url("../assets/img/gradient_overlay.png"), 	url("../assets/img/overlay.png"), url("../assets/img/blog_news.jpg");
+		background-image:  url("../assets/img/overlay-none.png"), url("../assets/img/transp.png"), url("../assets/img/gradient_overlay.png"), 	url("../assets/img/overlay.png"), url("../assets/img/blog_news.jpg");
 		background-position: top, center 2em, top left,  	top left, 	center top;
 		background-size: 	auto, auto 2em, auto 9em, 			auto, 		cover;	
 	}
 	
 	#mos {
 		margin: 0;	
-		background-image:  url("../img/overlay-none.png"), url("../img/harvest_white.png"), url("../img/gradient_overlay.png"), 	url("../img/overlay.png"), url("../img/2015-easter-bg.jpg");
+		background-image:  url("../img/overlay-none.png"), url("../img/transp.png"), url("../img/gradient_overlay.png"), 	url("../img/overlay.png"), url("../img/2015-easter-bg.jpg");
 		background-position: top, center 2em, top left,  	top left, 	center center;
 		background-size: 	auto, auto 2em, auto 9em, 			auto, 		cover;	
 	}

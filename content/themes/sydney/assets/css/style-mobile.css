@@ -123,7 +123,7 @@
 
 	#banner {
 		padding: 6em 0;
-		background-image:  url("../img/harvest_white.png"), url("../img/gradient_overlay.png"), url("../img/overlay-none.png"), url("../img/overlay.png"), url("../img/wood-panel.jpg");
+		background-image:  url("../img/transp.png"), url("../img/gradient_overlay.png"), url("../img/overlay-none.png"), url("../img/overlay.png"), url("../img/wood-panel.jpg");
 		background-position: center 4.5em,	top left, 	top left,	top left, 	center top;
 		background-repeat: 	 no-repeat, 	repeat-x, 	repeat,		repeat, 	no-repeat;
 		background-size: 	 auto 2em, 		6em, 		auto, 		auto, 		cover;
@@ -131,7 +131,7 @@
 	
 	#blognews {
 		padding: 6em 0;
-		background-image:  url("../img/harvest_white.png"), url("../img/gradient_overlay.png"), url("../img/overlay-none.png"), url("../img/overlay.png"), url("../img/blog_news.jpg");
+		background-image:  url("../img/transp.png"), url("../img/gradient_overlay.png"), url("../img/overlay-none.png"), url("../img/overlay.png"), url("../img/blog_news.jpg");
 		background-position: center 4.5em,	top left, 	top left,	top left, 	center top;
 		background-repeat: 	 no-repeat, 	repeat-x, 	repeat,		repeat, 	no-repeat;
 		background-size: 	 auto 2em, 		6em, 		auto, 		auto, 		cover;
@@ -140,7 +140,7 @@
 	
 	#mos {
 		padding: 6em 0;
-		background-image:  url("../img/harvest_white.png"), url("../img/gradient_overlay.png"), url("../img/overlay-none.png"), url("../img/overlay.png"), url("../img/2015-easter-bg.jpg");
+		background-image:  url("../img/transp.png"), url("../img/gradient_overlay.png"), url("../img/overlay-none.png"), url("../img/overlay.png"), url("../img/2015-easter-bg.jpg");
 		background-position: center 4.5em,	top left, 	top left,	top left, 	center center;
 		background-repeat: 	 no-repeat, 	repeat-x, 	repeat,		repeat, 	no-repeat;
 		background-size: 	 auto 2em, 		6em, 		auto, 		auto, 		cover;

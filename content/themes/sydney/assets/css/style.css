@@ -346,6 +346,16 @@
 				top: 0;
 			}
 
+			.icon.circle.fa-instagram {
+				background: #3b5998;
+				background: none;
+			}
+				.icon.circle.fa-instagram:hover {
+					background: #3b5998;
+					color: #FFFFFF;
+				}
+
+
 			.icon.circle.fa-facebook {
 				background: #3b5998;
 				background: none;
