@@ -128,7 +128,7 @@
 
 /* CTA */
 
-	#cta, #recent-message {
+	.cta, #recent-message {
 		background-size: auto, cover;
 		margin: 0;
 	}

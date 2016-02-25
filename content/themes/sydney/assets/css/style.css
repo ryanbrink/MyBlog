@@ -577,8 +577,8 @@
 		input[type="submit"].special,
 		input[type="reset"].special,
 		.button.special {
-			background: #8dc63f;
-			border-color: #f7941e;
+			/*background: #8dc63f;*/
+			/*border-color: #f7941e;*/
 			color: white !important;
 		}
 
@@ -586,8 +586,9 @@
 			input[type="submit"].special:hover,
 			input[type="reset"].special:hover,
 			.button.special:hover {
-				background: #78a936 !important;
-				border-color: #f7941e !important;
+				/*background: #78a936 !important;*/
+				background: rgba(255,255,255,0.6);
+				/*border-color: #f7941e !important;*/
 			}
 
 		input[type="button"].fit,
@@ -884,7 +885,7 @@
 		background-repeat:  	 no-repeat, no-repeat, repeat-x, 		repeat, 	no-repeat;
 		color: white;
 		cursor: default;
-		padding: 6em 0;
+		padding: 5em 0;
 		text-align: center;
 	}
 	
@@ -982,7 +983,7 @@
 
 /* CTA */
 
-	#cta {
+	.cta {
 		background-attachment: scroll, fixed;
 		background-color: #645862;
 		background-image: url("img/overlay.png"), url("../img/grain_hand.jpg");
@@ -994,14 +995,14 @@
 		text-align: center;
 	}
 
-		#cta header {
+		.cta header {
 			margin-bottom: 2em;
 		}
 		
-		#cta header h2 {
+		.cta header h2 {
 			font-size:1.75em;
 		}
-		#cta header p {
+		.cta header p {
 			font-size:1.3em;
 			line-height: 1.75em;
 		}
@@ -1263,8 +1264,8 @@
 		
 		#easterImage {
 			width: 20em;
-			margin-top: 1em;
-			margin-bottom: 2em;	
+			margin-top: 0em;
+			margin-bottom: 0em;	
 		}
 		
 		

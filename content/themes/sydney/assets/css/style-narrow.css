@@ -69,7 +69,7 @@
 
 /* CTA */
 
-	#cta, #recent-message {
+	.cta, #recent-message {
 		background-size: auto, cover;
 		padding: 5em 3em 5em 3em;
 	}

@@ -188,7 +188,7 @@
 
 /* CTA */
 
-	#cta {
+	.cta {
 		background-size: auto, cover;
 		padding: 3em 1.5em;
 	}
