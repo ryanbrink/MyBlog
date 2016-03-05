@@ -54,7 +54,7 @@ frontendRoutes = function () {
     router.get('*live-music-part-1-hardware*', function(req, res, next) {
         res.redirect(301, 'http://www.rythechurchtechguy.com/live-music-part-1-hardware/');
     });
-    
+
 
 
 
@@ -118,21 +118,7 @@ frontendRoutes = function () {
 
     // Default
     router.get('/page/:page/', frontend.homepage);
-    router.get('/', function(req, res, next){
-        res.render('landing');
-      });
-
-    router.get('/leadership', function(req, res, next) {
-        frontend.custom_page(req, res, next, "leadership")
-    });
-    router.get('/music', function(req, res, next) {
-        frontend.custom_page(req, res, next, "music")
-    });
-    router.get('/programming', function(req, res, next) {
-        frontend.custom_page(req, res, next, "programming")
-    });
-    
-    router.get('/blog', frontend.homepage);
+    router.get('/', frontend.homepage);    
     router.get('*', frontend.single);
 
     return router;
